@@ -47,6 +47,7 @@ caratteri = list(frase)
 
 caratteri.append("$"); #intuibile
 
+
 #step 2 - permutare la frase spostando ultimo carattere in prima posizione
 
 mat = [caratteri.copy()]
@@ -55,7 +56,7 @@ for n in range(0, len(frase)):
         
         tmp = caratteri.pop(-1)
         caratteri.insert(0,tmp) #n=0 : $BANANA
-        print(caratteri)
+        #print(caratteri)
         
         mat.append(caratteri.copy())  #siccome python usa pointer a valori e non istanze
 
@@ -64,17 +65,24 @@ print()
 print()  
 for n in mat:
     print(n)
+
+
+
+
+#step 3 - Sorting the matrix in "ordine lessicografico" (non mi ricordo la parola in english)
     
+for i in range(len(mat)):
+    for j in range(len(mat) - 1 - i):     #bubble sort
+        
+        if mat[j] > mat[j + 1]:
+            
+            mat[j], mat[j + 1] = mat[j + 1], mat[j]
 
 
-
-
-
-
-
-
-
-
+print()       
+print()  
+for n in mat:
+    print(n)
 
 
 
