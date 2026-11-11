@@ -29,6 +29,18 @@ ordine lessicografico
 <h1>step 3:</h1>
 il risultato è la parola che si forma con l'ultima lettera delle righe della matrice step2
 
-_______________________________________________________________________________________________--
+_______________________________________________________________________________________________
+
+
+<h1>Parte 2</h1>
+
+ due script "client.py" e "server.py" che utilizzino dei socket TCP per lo scambio di informazioni.
+ Il client invia una stringa al server;
+ 
+ il server elabora la trasformata e la restituisce al client.
+
+
+
+_______________________________________________________________________________________________
 
 In fine fare relazione spiegando funzionamento, applicazione e implementazione dell'algoritmo in un pdf
